@@ -1,5 +1,44 @@
+body {
+    background-color: #fff;
+    color: #222;
+    font-family: arial,sans-serif;
+    font-size: small;
+}
+
+.TopButtons{
+	text-align: right;
+}
+
+nav ul li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+ul li button{
+	display: inline-block;	
+}
+
 nav ul li a img{
 	vertical-align: middle;
 	height: 30px;
 	width: 30px;
+}
+
+form input{
+	width: 500px
+}
+
+img{
+	vertical-align: middle;;
+}
+
+.SubButtons{
+	display: inline-block;
+}
+
+.LeftSubButtons{
+	float: left;
+}
+.RightSubButtons{
+	float: right;
 }
