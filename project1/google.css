@@ -9,13 +9,15 @@ body {
 	text-align: right;
 }
 
-nav ul li{
-	display: inline-block;
-	margin-left: 10px;
+.main{
+	position: fixed;
+	top:20%;
+	left:30%;
 }
 
-ul li button{
-	display: inline-block;	
+nav ul li{
+	display: inline-block;
+	margin-left: 20px;
 }
 
 nav ul li a img{
@@ -29,15 +31,30 @@ form input{
 }
 
 img{
-	vertical-align: middle;;
+	vertical-align: middle;
+}
+
+.logo{
+	margin-left: 100px;
+}
+
+.Buttons{
+	margin-left: 50px;
 }
 
 .SubButtons{
+	background-color: #ddd;
 	display: inline-block;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 20px;
 }
 
 .LeftSubButtons{
 	float: left;
+
 }
 .RightSubButtons{
 	float: right;
