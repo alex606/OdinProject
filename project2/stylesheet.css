@@ -1,20 +1,26 @@
 /*div {background: #AAAAAA;}*/
 
 div div {
-	margin: 1px;
+	
 }
 
 .newBoard{
 		height: 960px;
 		width: 960px;
 		text-align: center;
+		/*border:1px solid #021a40;*/
+		background-color:#fff;
 }
 
 .cellElement{
 	display: inline-block;
 	height: 50px;
 	width: 50px;
-	background: #A4CA39
+	background: #A4CA39;
+}
+
+.rowElement{
+	
 }
 
 .hovered{

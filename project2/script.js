@@ -3,15 +3,12 @@ $(document).ready( function(){
 	var $row = "<div class='rowElement'></div>";
 	var $col = "<div class='cellElement'></div>";
 
-	// Creates 4 x 4 board on start
-	$('.newBoard').append($row).append($row).append($row).append($row);
-	$('.rowElement').append($col).append($col).append($col).append($col);
-
-	$('.cellElement').hover( function(){
-		$(this).addClass("hovered")
+	$('button').click( function(){
+		testFunction()
 	});
 
-	$('button').click( function(){
+	var testFunction = function()
+	{
 		var newRows = prompt("Enter number of rows");
 		var newCols = prompt("Enter number of columns");
 		$( ".rowElement" ).remove();
@@ -25,15 +22,16 @@ $(document).ready( function(){
 			$('.rowElement').append($col);
 		}
 
-		var newHeight = $('.newBoard').height() / newRows;
+		var scaleFactor = 1;
+		var newHeight = ($('.newBoard').height() / newRows)// - newRows*scaleFactor ;
+		$('.rowElement').css('height', newHeight);
 		$('.cellElement').css('height', newHeight);
 
-		var newWidth = $('.newBoard').width() / newCols;
-		$('.cellElement').css('width', newHeight);
-
+		var newWidth = (($('.newBoard').width() / newCols))// - newCols*scaleFactor ;
+		$('.cellElement').css('width', newWidth);
 
 		$('.cellElement').hover( function(){
 			$(this).addClass("hovered")
 		});
-	});
+	}
 });
