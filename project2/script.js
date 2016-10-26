@@ -25,6 +25,13 @@ $(document).ready( function(){
 			$('.rowElement').append($col);
 		}
 
+		var newHeight = $('.newBoard').height() / newRows;
+		$('.cellElement').css('height', newHeight);
+
+		var newWidth = $('.newBoard').width() / newCols;
+		$('.cellElement').css('width', newHeight);
+
+
 		$('.cellElement').hover( function(){
 			$(this).addClass("hovered")
 		});

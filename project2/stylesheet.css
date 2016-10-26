@@ -1,13 +1,19 @@
 /*div {background: #AAAAAA;}*/
 
 div div {
-	margin: 10px;
+	margin: 1px;
+}
+
+.newBoard{
+		height: 960px;
+		width: 960px;
+		text-align: center;
 }
 
 .cellElement{
 	display: inline-block;
-	height: 100px;
-	width: 100px;
+	height: 50px;
+	width: 50px;
 	background: #A4CA39
 }
 
