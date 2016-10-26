@@ -24,5 +24,9 @@ $(document).ready( function(){
 		{
 			$('.rowElement').append($col);
 		}
+
+		$('.cellElement').hover( function(){
+			$(this).addClass("hovered")
+		});
 	});
 });
