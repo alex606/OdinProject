@@ -1,6 +1,16 @@
-div {background: #A4CA39; position: relative; margin: 10px;}
+/*div {background: #AAAAAA;}*/
 
-.cell{
+div div {
+	margin: 10px;
+}
+
+.cellElement{
+	display: inline-block;
 	height: 100px;
 	width: 100px;
+	background: #A4CA39
+}
+
+.hovered{
+	background: #AAAAAA	
 }
