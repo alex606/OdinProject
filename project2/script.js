@@ -23,12 +23,14 @@ $(document).ready( function(){
 		}
 
 		var scaleFactor = 1;
-		var newHeight = ($('.newBoard').height() / newRows)// - newRows*scaleFactor ;
+		var newHeight = ($('.newBoard').height() / newRows - 2)// - newRows*scaleFactor ;
 		$('.rowElement').css('height', newHeight);
 		$('.cellElement').css('height', newHeight);
 
-		var newWidth = (($('.newBoard').width() / newCols))// - newCols*scaleFactor ;
+		var newWidth = (($('.newBoard').width() / newCols - 2))// - newCols*scaleFactor ;
 		$('.cellElement').css('width', newWidth);
+		
+		$('.cellElement').css('border', '1px solid #000');
 
 		$('.cellElement').hover( function(){
 			$(this).addClass("hovered")
