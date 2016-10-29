@@ -30,7 +30,7 @@ $(document).ready( function(){
 		}
 
 		// Resize cells elements as necessary and accounts for cell borders
-		var newHeight = ($('.newBoard').height() / newRows - 2)
+		var newHeight = ($('.newBoard').height() / newRows - 0)
 		$('.rowElement').css('height', newHeight);
 		$('.cellElement').css('height', newHeight);
 		var newWidth = (($('.newBoard').width() / newCols - 2))
@@ -53,7 +53,10 @@ $(document).ready( function(){
 				var newOpacity = $(this).css("opacity") * 0.75;
 				$(this).css("opacity", newOpacity);
 			}
-			$(this).css('background', color);
+			else
+			{
+				$(this).css('background', color);
+			}
 		});
 	}
 
