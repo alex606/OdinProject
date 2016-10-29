@@ -7,15 +7,21 @@
 		<script type='text/javascript' src='script.js'></script>
 	</head>
 	<body>
-	<button>New Grid</button>
-	<select id="color">
-	  <option value="#ff0000">Red</option>
-	  <option value="#0000ff">Blue</option>
-	  <option value="#00ff00">Green</option>
-	  <option value="Random">Random</option>
-	</select> 
-	 <form> Rows (between 1 and 200): <input type="number" name="rowNumber" min="1" max="200" value="5"> </form>
-	 <form> Columns (between 1 and 200): <input type="number" name="colNumber" min="1" max="200"value="5"> </form>
-		<div class='newBoard'></div>
+	<h2>Alex's Online Etch a Sketch</h1>
+
+	<div class='options'>
+		<button>New Grid</button>
+		<select id="color">
+		  <option value="#ff0000">Red</option>
+		  <option value="#0000ff">Blue</option>
+		  <option value="#00ff00">Green</option>
+		  <option value="Random">Random</option>
+		  <option value="trail">Trail</option>
+		  <option value="darken">Darken</option>
+		</select> 
+		 <form> Rows (between 1 and 100): <input type="number" name="rowNumber" min="1" max="100" value="50"> </form>
+		 <form> Columns (between 1 and 100): <input type="number" name="colNumber" min="1" max="100"value="50"> </form>	
+	</div>
+	<div class='newBoard'></div>
 	</body>
 </html>
