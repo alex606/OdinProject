@@ -42,6 +42,7 @@ $(document).ready( function(){
 			if(color === 'Random')
 			{
 				color = GetRandomColor();
+				$(this).css('background', color);
 			}
 			else if(color === 'trail')
 			{
