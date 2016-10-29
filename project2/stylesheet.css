@@ -1,14 +1,7 @@
-/*div {background: #AAAAAA;}*/
-
-div div {
-	
-}
-
 .newBoard{
 		height: 960px;
 		width: 960px;
 		text-align: center;
-		/*border:1px solid #021a40;*/
 		background-color:#fff;
 }
 
@@ -16,13 +9,10 @@ div div {
 	display: inline-block;
 	height: 50px;
 	width: 50px;
-	background: #A4CA39;
+	background: #FFF;
+	border: 1px solid #000;
 }
 
 .rowElement{
 	
-}
-
-.hovered{
-	background: #AAAAAA	
 }

@@ -9,8 +9,9 @@ $(document).ready( function(){
 
 	var testFunction = function()
 	{
-		var newRows = prompt("Enter number of rows");
-		var newCols = prompt("Enter number of columns");
+		var newRows = $('input[name="rowNumber"]').val();
+		var newCols = $('input[name="colNumber"]').val();
+
 		$( ".rowElement" ).remove();
 
 		for (i = 0; i < newRows; i++)
@@ -22,18 +23,32 @@ $(document).ready( function(){
 			$('.rowElement').append($col);
 		}
 
-		var scaleFactor = 1;
-		var newHeight = ($('.newBoard').height() / newRows - 2)// - newRows*scaleFactor ;
+		var newHeight = ($('.newBoard').height() / newRows - 2)
 		$('.rowElement').css('height', newHeight);
 		$('.cellElement').css('height', newHeight);
 
-		var newWidth = (($('.newBoard').width() / newCols - 2))// - newCols*scaleFactor ;
+		var newWidth = (($('.newBoard').width() / newCols - 2))
 		$('.cellElement').css('width', newWidth);
 		
-		$('.cellElement').css('border', '1px solid #000');
-
 		$('.cellElement').hover( function(){
-			$(this).addClass("hovered")
+			//$(this).addClass("hovered")
+			var color = $('#color').val();
+			if(color == 'Random')
+			{
+				color = GetRandomColor();
+			}
+			$(this).css('background', color);
 		});
+	}
+
+	var GetRandomColor = function()
+	{
+	    var letters = '0123456789ABCDEF';
+	    var color = '#';
+	    for (var i = 0; i < 6; i++ ) 
+	    {
+	        color += letters[Math.floor(Math.random() * 16)];
+	    }
+	    return color;
 	}
 });
